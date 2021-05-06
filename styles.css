@@ -1,20 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
-  --main-bg-color: hsl(0, 0%, 95%);
+  --light-gray: hsl(0, 0%, 95%);
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --trans-white: hsla(0, 0%, 100%, 0.75);
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--light-gray);
 }
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-h1,
+p,
 button {
   font-family: "Lexend Deca", sans-serif;
+}
+
+.sedan-btn {
+  color: var(--bright-orange);
+}
+
+.suv-btn {
+  color: var(--dark-cyan);
+}
+
+.lux-btn {
+  color: var(--very-dark-cyan);
 }
 
 p {
@@ -24,10 +40,11 @@ p {
 h1 {
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
+  color: var(--light-gray);
 }
 
 .sedan {
-  background-color: hsl(31, 77%, 52%);
+  background-color: var(--bright-orange);
 }
 
 .suv {
@@ -39,9 +56,9 @@ h1 {
 }
 
 @media screen and (max-width: 375px) {
-  body {
-    background-color: var(--main-bg-color);
-  }
+  /* body {
+    background-color: var(--light-gray);
+  } */
   .main {
     display: grid;
     grid-template-columns: 1fr;
