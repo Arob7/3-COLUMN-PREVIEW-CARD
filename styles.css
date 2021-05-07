@@ -10,11 +10,12 @@
 
 body {
   background-color: var(--light-gray);
+  justify-content: center;
 }
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 30px 10px 30px 10px;
+  margin: 80px 10px 30px 10px;
 }
 
 div.sedan {
@@ -102,9 +103,6 @@ h1 {
 }
 
 @media screen and (max-width: 375px) {
-  /* body {
-    background-color: var(--light-gray);
-  } */
   .main {
     display: grid;
     grid-template-columns: 1fr;
