@@ -95,11 +95,11 @@ h1 {
 }
 
 .suv {
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--dark-cyan);
 }
 
 .luxury {
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--very-dark-cyan);
 }
 
 @media screen and (max-width: 375px) {
